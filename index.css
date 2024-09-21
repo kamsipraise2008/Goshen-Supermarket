@@ -5,9 +5,9 @@ body{
 
 /*start of hero-text*/
 .container{
-    background-image: url(./image/goshen.jpg);
+    background-image: url(image/shop.jpg);
     background-position: center;
-    height: 700px;
+    height: 900px;
 }
 .text{
     font-size: large;
@@ -57,11 +57,10 @@ body {
 }
 
 .services-section {
-    display: block;
+    display: flex;
     width: 100%;
     margin: 50px auto 0 auto;
     text-align: center;
-    
 }
 
 .service-box {
@@ -121,14 +120,16 @@ body {
 .portfolio-container {
     display: flex;
     width: 90%;
-    margin: 70px auto 40px auto;
+    margin: 5px;
     text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0%;
 }
 
 .portfolio-box {
     display: inline-block;
     width: 30%;
-    padding: 10px 5px;
+    padding: 5px 5px;
     background-color: transparent;
     box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4);
     margin: 5px;
@@ -161,14 +162,16 @@ button{
 
 /*style for the testimonial section*/
 .testimonial-container {
-    display: flex;
+    
     width: 100%;
     background-color: #ddd;
     margin: 100px auto 60px auto;
-    padding: 50px 0;
+    padding: 10px 0;
     text-align: center;
 }
-
+.test{
+    display: flex;
+}
 .testimonial-title {
     text-align: center;
     font-weight: bold;
@@ -467,14 +470,17 @@ nav {
         font-size: 20px;
     }
 
-    .services-section {
+    .services-section{
         width: 90%;
         text-align: center;
+        display: block;
+        direction: column;
     }
     .service-box {
         display: block;
         width: 80%;
         margin: 10px auto 10px auto;
+        
     }
 
     .service-box p {
@@ -484,6 +490,7 @@ nav {
 /* portfolio session */
 .portfolio-container{
     display: block;
+    direction: column;
     width: 90%;
     margin: 70px auto 40px auto;
     text-align: center;
@@ -509,16 +516,25 @@ div{
     .testimonial-container{
         
         display: block;
-        width: 100%;
-        background-color: #ddd;
-        margin: 100px auto 60px auto;
+        direction: column;
+        width: 90%;
+        margin: 70px auto 40px auto;
+        text-align: center;
     
     }
-        .testimonial-box {
+    .test{
         display: block;
-        width: 70%;
-        margin: 40px auto 40px auto;
-        padding-bottom: 50px;
+        direction: column;
+        width: 90%;
+        margin: 70px auto 40px auto;
+        text-align: center;
+    }
+        .testimonial-box {
+            display: block;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
 }
 @media (max-width: 700px) {
     .contact-box {
